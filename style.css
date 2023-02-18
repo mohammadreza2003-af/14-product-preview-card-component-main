@@ -37,6 +37,7 @@ main {
   flex-direction: column;
   gap: 12px;
   padding: 12px;
+  position: relative;
 }
 .n-a {
   font-size: 14px;
@@ -83,6 +84,13 @@ h1 {
 .add-card:is(:hover, :active) {
   background-color: hsl(158, 59%, 21%);
 }
+.icon {
+  position: absolute;
+  height: 20px;
+  transform: translate(-50%, -50%);
+  bottom: 28px;
+  left: 60px;
+}
 @media (max-width: 560px) {
   .box {
     margin: 12px 0;
@@ -103,6 +111,13 @@ h1 {
     flex-direction: column;
     gap: 12px;
     padding: 12px;
+  }
+  .icon {
+    position: absolute;
+    height: 20px;
+    transform: translate(-50%, -50%);
+    bottom: 15px;
+    left: 135px;
   }
 }
 @media (max-width: 400px) {
@@ -155,7 +170,14 @@ h1 {
   }
   h1 {
     font-size: 24px;
-
+  }
+  .icon {
+    position: absolute;
+    height: 20px;
+    transform: translate(-50%, -50%);
+    bottom: 15px;
+    left: 60px;
+  }
 }
 @media (max-width: 320px) {
   .box {
