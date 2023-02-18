@@ -72,3 +72,12 @@ h1 {
   text-decoration: none;
   border-radius: 6px;
 }
+.add-card:is(:link, :visited) {
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.add-card:is(:hover, :active) {
+  background-color: hsl(158, 59%, 21%);
+}
+/* @media (max-width:){} */
