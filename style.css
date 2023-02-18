@@ -25,7 +25,10 @@ main {
   grid-template-columns: repeat(2, 250px);
   overflow: hidden;
 }
-.img {
+.img-m {
+  display: none;
+}
+.img-d {
   width: 250px;
 }
 .text-box {
@@ -80,4 +83,120 @@ h1 {
 .add-card:is(:hover, :active) {
   background-color: hsl(158, 59%, 21%);
 }
-/* @media (max-width:){} */
+@media (max-width: 560px) {
+  .box {
+    margin: 12px 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .img-d {
+    display: none;
+  }
+  .img-m {
+    width: 400px;
+    display: block;
+  }
+  .text-box {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px;
+  }
+}
+@media (max-width: 400px) {
+  .box {
+    align-items: center;
+    margin: 12px 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .img-d {
+    display: none;
+  }
+  .img-m {
+    width: 300px;
+    display: block;
+  }
+  .text-box {
+    justify-content: center;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px;
+  }
+  .text-box {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px;
+  }
+  .n-a {
+    font-size: 8px;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    color: hsl(228, 12%, 48%);
+  }
+  .dis-text {
+    font-size: 12px;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+  }
+  .b-text {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Fraunces", serif;
+    color: hsl(158, 36%, 37%);
+  }
+  h1 {
+    font-size: 24px;
+
+}
+@media (max-width: 320px) {
+  .box {
+    margin: 12px 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .img-d {
+    display: none;
+  }
+  .img-m {
+    width: 250px;
+    display: block;
+  }
+  .text-box {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px;
+  }
+  .n-a {
+    font-size: 8px;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    color: hsl(228, 12%, 48%);
+  }
+  .dis-text {
+    font-size: 12px;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+  }
+  .b-text {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Fraunces", serif;
+    color: hsl(158, 36%, 37%);
+  }
+  h1 {
+    font-size: 24px;
+  }
+}
