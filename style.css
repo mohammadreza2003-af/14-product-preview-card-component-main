@@ -18,7 +18,7 @@ main {
 }
 .box {
   background-color: hsl(0, 0%, 100%);
-  border-radius: 16px;
+  border-radius: 9px;
   display: flex;
   gap: 12px;
   width: 450px;
